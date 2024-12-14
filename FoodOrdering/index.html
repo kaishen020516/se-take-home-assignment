@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Controller</title>
+    <link rel="icon" type="image/png" href="Mcd_logo.png" sizes="32x32"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Order Controller System</h1>
+        <div id="container">
+            <div class="area" id="pending">
+                <h2>Pending</h2>
+            </div>
+            <div class="area" id="bot">
+                <h2>Processing</h2>
+            </div>
+            <div class="area" id="complete">
+                <h2>Completed</h2>
+            </div>
+        </div>
+        <div id="bots">
+            <h2>Bots</h2>
+        </div>
+        <div id="button-container">
+            <button onclick="addOrder('Normal')">New Normal Order</button>
+            <button onclick="addOrder('VIP')">New VIP Order</button>
+            <button onclick="addBot()">+ Bot</button>
+            <button onclick="removeBot()">- Bot</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
